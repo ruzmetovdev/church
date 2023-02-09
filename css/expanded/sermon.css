@@ -245,7 +245,7 @@ a {
     padding-bottom: 64px;
   }
 }
-@media (min-width: 620px) {
+@media (min-width: 1150px) {
   .random {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;

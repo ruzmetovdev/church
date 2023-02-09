@@ -253,8 +253,8 @@ a {
     }
 }
 @media (min-width: 620px){
-    .random{
-        display: grid; 
+    .random {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 24px;
     }
@@ -263,8 +263,8 @@ a {
         padding-bottom: 64px;
     }
 }
-@media (min-width: 620px){
-    .random{
+@media (min-width: 1150px) {
+    .random {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 24px;
     }
