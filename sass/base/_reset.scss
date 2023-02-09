@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
   font-family: "Roboto Condensed";
   src: url(../../font/RobotoCondensed-Regular.ttf);
 }
@@ -12,4 +12,5 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Roboto Condensed";
 }

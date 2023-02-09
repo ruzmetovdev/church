@@ -45,4 +45,25 @@
   }
 }
 
-// main 
+// main
+main {
+  background-color: #e5e5e5;
+}
+
+.contact {
+  &__right {
+    h3 {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #1e1b1b;
+    }
+    input {
+    
+    }
+  }
+}
