@@ -1,0 +1,9 @@
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.obi h1 {
+  font-size: 100px;
+}

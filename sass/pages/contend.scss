@@ -1,7 +1,8 @@
-@use "../global";
+@use "../layout/container";
 
-#our {
-  background-image: url(/images/contact/6liebVeAfrY.png);
-  background-repeat: no-repeat;
+.cont {
+  h6 {
+    font-size: 100px;
+    background-color: green;
+   }
 }
-
