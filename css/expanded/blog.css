@@ -215,6 +215,68 @@ body {
   color: #161722;
 }
 
+.card {
+  max-width: 302px;
+  height: 367px;
+  background: #ffffff;
+  margin-left: 15px;
+}
+
+.card span {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card h3 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-left: 65px;
+  max-width: 200px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+}
+
+.card p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 220px;
+  padding-top: 16px;
+  margin-left: 50px;
+  color: #161722;
+  opacity: 0.78;
+  padding-bottom: 36px;
+}
+
+.card h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 65px;
+  color: #161722;
+}
+
 @media (min-width: 1000px) {
   .content h1 {
     font-size: 48px;
@@ -300,13 +362,14 @@ body {
 }
 @media (min-width: 1020px) {
   .card-box {
-    display: grid;
-    grid-template-columns: repeat(1, 4fr);
-    grid-row-gap: 20px;
+    display: flex;
+    justify-content: space-around;
   }
   .cards {
     width: 302px;
     height: 357px;
+    cursor: pointer;
+    transition: 0.1s;
   }
   .cards span {
     margin-left: 32px;
@@ -320,5 +383,40 @@ body {
   }
   .cards h4 {
     margin-left: 32px;
+  }
+  .card-box2 {
+    display: flex;
+    padding-top: 24px;
+  }
+  .card {
+    width: 290px;
+    cursor: pointer;
+    height: 347px;
+  }
+  .card span {
+    margin-left: 32px;
+  }
+  .card h3 {
+    margin-left: 32px;
+  }
+  .card p {
+    margin-left: 32px;
+    max-width: 240px;
+  }
+  .card h4 {
+    margin-left: 32px;
+  }
+  .card:hover {
+    width: 302px;
+    height: 16px;
+    background: #ffd0a0;
+  }
+  .cards:hover {
+    width: 302px;
+    height: 16px;
+    background: #ffd0a0;
+  }
+  .card {
+    padding-bottom: 100px;
   }
 }
