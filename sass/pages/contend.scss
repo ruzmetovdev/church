@@ -1,4 +1,5 @@
 @use "../global";
+@use "../abstracts/mixin" as mix;
 #our {
   background-image: url(/images/contact/6liebVeAfrY.png);
   background-repeat: no-repeat;
@@ -34,7 +35,6 @@
 // media
 @media (min-width: 700px) {
   .cont {
-    padding-left: 110px;
     h1 {
       text-align: left;
       width: 40%;
@@ -45,4 +45,114 @@
   }
 }
 
-// main 
+// main
+main {
+  background-color: #e5e5e5;
+}
+
+.contact {
+  &__right {
+    text-align: center;
+    padding: 128px 0;
+    h3 {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #1e1b1b;
+    }
+    form {
+      margin-top: 32px;
+      .mess {
+        padding-bottom: 72px;
+      }
+    }
+    input {
+      display: block;
+      margin-bottom: 12px;
+      width: 100%;
+      padding: 20px;
+      outline: none;
+      border: none;
+      background: #ffffff;
+      border-radius: 4px;
+      &::placeholder {
+        font-family: "Roboto Condensed";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161722;
+      }
+    }
+    button a {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #1c1d28;
+    }
+    button {
+      width: 100%;
+      background: #ffd2a4;
+      border-radius: 12px;
+      border: none;
+      padding: 20px 0;
+    }
+  }
+  &__left {
+    text-align: center;
+    .past {
+      margin-bottom: 32px;
+    }
+    p {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #1e1b1b;
+      opacity: 0.7;
+    }
+    h3 {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #161722;
+      margin-top: 8px;
+    
+    }
+    img {
+      margin-top: 8px;
+    }
+    .tep {
+      margin-top: 32px;
+    }
+  }
+}
+
+// media 
+@media(min-width:700px) {
+  .contact {
+    display: flex;
+    gap: 128px;
+    &__right {
+      text-align: left;
+      width: 50%;
+    }
+    &__left {
+      text-align: left;
+      padding-top: 200px;
+    }
+  }
+}
