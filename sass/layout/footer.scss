@@ -1,0 +1,157 @@
+@use "../global";
+footer {
+  background: url(/images/contact/Background\ Shape.png);
+  background-color: #000000;
+}
+
+.footcon {
+  text-align: center;
+  padding-top: 69px;
+  padding-bottom: 64px;
+  &__card1 {
+    a {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    img {
+      padding-bottom: 32px;
+    }
+    .bir {
+      margin-top: 32px;
+    }
+    li {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__card2 {
+    margin-top: 20px;
+    h3 {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    a {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: #ffffff;
+      opacity: 0.78;
+    }
+    li {
+      margin-bottom: 24px;
+    }
+  }
+  &__card3 {
+    margin-top: 20px;
+    h3 {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+  }
+  &__card4 {
+    position: relative;
+    margin-top: 20px;
+    h1 {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 35px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 20px 0px 20px 10px;
+      border: none;
+      color: white;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+    }
+    button a {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #1c1d28;
+    }
+    button {
+      padding: 19px 30px;
+      background: #ffd2a4;
+      border-radius: 8px;
+      border: none;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .footcon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__card4 {
+      margin-top: 50px;
+    }
+    &__card3 {
+      margin-top: 50px;
+      font-size: 50px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .footcon {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+
+    &__card4 {
+      margin-top: 0px;
+      input {
+        width: 100%;
+      }
+      button {
+        position: absolute;
+        top: 105px;
+        right: 2px;
+      }
+    }
+    &__card3 {
+      margin-top: 0px;
+      margin-right: -200px;
+    }
+
+    &__card2 {
+      margin-top: 0px;
+      margin-right: -200px;
+    }
+  }
+}
