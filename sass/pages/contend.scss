@@ -1,8 +1,48 @@
 @use "../global";
-
-.cont {
-  h6 {
-    font-size: 100px;
-    background-color: green;
-   }
+#our {
+  background-image: url(/images/contact/6liebVeAfrY.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+.cont {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  h6 {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffd2a4;
+    text-align: center;
+  }
+  h1 {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+// media
+@media (min-width: 700px) {
+  .cont {
+    padding-left: 110px;
+    h1 {
+      text-align: left;
+      width: 40%;
+    }
+    h6 {
+      text-align: left;
+    }
+  }
+}
+
+// main 
