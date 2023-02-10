@@ -1,5 +1,5 @@
 @use "../global";
-@use "../abstracts/mixin" as mix;
+@use "../layout/footer.scss";
 #our {
   background-image: url(/images/contact/6liebVeAfrY.png);
   background-repeat: no-repeat;
@@ -108,6 +108,7 @@ main {
   }
   &__left {
     text-align: center;
+    padding-bottom: 128px;
     .past {
       margin-bottom: 32px;
     }
