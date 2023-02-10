@@ -1,1 +1,129 @@
- @use "../global";
+@use "../global";
+
+#navbar {
+  background: #0d0d0d;
+  position: fixed;
+  width: 100%;
+  transition: 0.4s;
+}
+
+nav {
+  padding: 22px 0;
+}
+
+.navbar-shrink {
+  padding: 8px 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .top-left {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+  & .top-left a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.9;
+  }
+  & .top-left a:hover {
+    color: #f2c79b;
+  }
+  & .top-left img {
+    padding-right: 92px;
+  }
+  & button {
+    padding: 20px 48px;
+    border: 1px solid;
+    border-radius: 12px;
+    background: #ffd2a4;
+    &:hover a {
+      background: #ceaf8f;
+      color: white;
+    }
+  }
+  & button a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1c1d28;
+  }
+  & button:hover {
+    background: #ceaf8f;
+  }
+
+  & .links,
+  button {
+    display: none;
+  }
+  & span {
+    color: white;
+  }
+
+  @media (min-width: 900px) {
+    & .links {
+      display: flex;
+      gap: 48px;
+    }
+    & button {
+      display: flex;
+    }
+    & span {
+      display: none;
+    }
+  }
+}
+
+// humburger---close---------
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f2c79b;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 12px;
+  font-size: 60px;
+  color: red;
+}
+
+
+//  navbar end------------------------------------

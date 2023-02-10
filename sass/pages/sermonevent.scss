@@ -1,1 +1,546 @@
 @use "../global";
+
+
+
+
+body {
+    background-color: #F5F2F0;
+}
+
+.someone__card {
+    width: 100%;
+
+    & img {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    & .someone__card-event {
+        font-size: 12px;
+        background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 10px 0;
+        display: inline-block;
+    }
+
+    & h1 {
+        color: #161722;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    & p {
+        color: #161722;
+        font-size: 12px;
+        line-height: 19px;
+        opacity: 0.78;
+        padding: 16px 0 20px;
+    }
+
+    & .how__to {
+        border-left: 2px solid #FFD2A4;
+        padding-left: 10px;
+        color: #161722;
+        opacity: 0.78;
+        margin-bottom: 20px;
+    }
+
+    & span {
+        color: #161722;
+        opacity: 0.78;
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+}
+
+.register__card {
+    width: 100%;
+    background: #F7F8FA;
+    padding: 0 25px;
+
+    & h1 {
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #161722;
+        margin-top: 35px;
+        padding: 40px 0 32px;
+    }
+}
+
+.time {
+    display: flex;
+    gap: 10px;
+
+    & .city__name {
+        display: flex;
+
+        & img {
+            width: 19.5px;
+            height: 19.5px;
+        }
+
+        & h2 {
+            margin-top: -5px;
+            font-size: 15px;
+            padding-left: 8px;
+            line-height: 24px;
+            color: #161722;
+        }
+    }
+}
+
+input {
+    opacity: 0.2;
+    border: none;
+    border-bottom: 1px solid #232536;
+    width: 100%;
+    padding: 10px 15px;
+
+}
+
+label {
+    color: #232536;
+    opacity: 0.6;
+    font-size: 20px;
+    padding-top: 32px;
+    padding-bottom: 12px;
+    display: inline-block;
+}
+
+.reg__now {
+    width: 227px;
+    height: 64px;
+    border: none;
+    margin-top: 32px;
+    background: #FFD2A4;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    color: #1C1D28;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.view-h1 {
+    text-align: center;
+    padding-top: 75px;
+    font-size: 30px;
+}
+
+.random {
+    & .random__box-1 {
+        margin-top: 45px;
+        width: 100%;
+        background-color: #ffffff;
+        padding-left: 40px;
+        padding-bottom: 59px;
+        border-bottom: 16px solid #ffffff;
+        transition: 0.4s;
+
+        & .july22 {
+            align-items: center !important;
+            color: #161722;
+            position: relative;
+
+            & h3 {
+                // margin-left: 6px;
+                position: absolute;
+                right: 30px;
+                top: 28px;
+            }
+
+            & p {
+                top: 35px;
+                right: 25px;
+                position: absolute;
+            }
+
+
+        }
+
+        & .eventh3 {
+            padding-top: 58px;
+            font-size: 12px;
+            background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        & h1 {
+            letter-spacing: -0.01em;
+            font-size: 24px;
+            line-height: 28px;
+            color: #161722;
+            margin-top: 16px;
+            text-transform: uppercase;
+        }
+
+        & p {
+            font-size: 16px;
+            color: #161722;
+            opacity: 0.78;
+            line-height: 24px;
+            margin-top: 16px;
+        }
+
+        & .friday {
+            display: flex;
+            align-items: center;
+
+            & img {
+                width: 20px;
+                height: 20px;
+                margin-right: 16px;
+            }
+
+        }
+
+
+    }
+
+}
+
+.random__box-1:hover {
+    border-bottom: 16px solid #FFD0A0;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url(/font/RobotoCondensed-Regular.ttf);
+}
+
+footer {
+    margin-top: 100px;
+    background: url(/images/contact/Background\ Shape.png);
+    background-color: #000000;
+}
+
+.footcon {
+    text-align: center;
+    padding-top: 69px;
+    padding-bottom: 64px;
+}
+
+.footcon__card1 a {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footcon__card1 img {
+    padding-bottom: 32px;
+}
+
+.footcon__card1 .bir {
+    margin-top: 32px;
+}
+
+.footcon__card1 li {
+    margin-bottom: 16px;
+}
+
+.footcon__card2 {
+    margin-top: 20px;
+}
+
+.footcon__card2 h3 {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footcon__card2 a {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.78;
+}
+
+.footcon__card2 li {
+    margin-bottom: 24px;
+}
+
+.footcon__card3 {
+    margin-top: 20px;
+}
+
+.footcon__card3 h3 {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footcon__card4 {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footcon__card4 h1 {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.footcon__card4 form {
+    margin-top: 20px;
+}
+
+.footcon__card4 input {
+    width: 100%;
+    padding: 20px 0px 20px 10px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+}
+
+.footcon__card4 button a {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #1c1d28;
+}
+
+.footcon__card4 button {
+    padding: 19px 30px;
+    background: #ffd2a4;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+
+
+@media (min-width: 620px) {
+    .random {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+    }
+
+    .view-h1 {
+        text-align: center;
+        padding-top: 125px;
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 700px) {
+    .footcon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footcon__card4 {
+        margin-top: 50px;
+    }
+
+    .footcon__card3 {
+        margin-top: 50px;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 760px) {
+    .card_1 {
+        display: flex;
+        justify-content: space-between;
+
+        .someone__card {
+            width: 50%;
+
+            & .someone__card-event {
+                font-size: 12px;
+            }
+
+            & h1 {
+                font-size: 48px;
+                letter-spacing: 0.03em;
+            }
+
+            & p {
+                color: #161722;
+                font-size: 16px;
+                line-height: 19px;
+                opacity: 0.78;
+                padding: 16px 0 20px;
+            }
+
+            & .how__to {
+                border-left: 2px solid #FFD2A4;
+                padding-left: 10px;
+                color: #161722;
+                opacity: 0.78;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            & span {
+                color: #161722;
+                opacity: 0.78;
+                font-size: 16px;
+                padding-bottom: 20px;
+            }
+        }
+
+        .register__card {
+            margin-top: 100px;
+            width: 40%;
+            height: 520px;
+            background: #F7F8FA;
+            padding: 0 25px;
+
+            & h1 {
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+                color: #161722;
+                margin-top: 35px;
+                padding: 40px 0 32px;
+            }
+        }
+
+        .time {
+            display: flex;
+            gap: 20px;
+
+            & .city__name {
+                display: flex;
+
+                & img {
+                    width: 19.5px;
+                    height: 19.5px;
+                }
+
+                & h2 {
+                    margin-top: -5px;
+                    font-size: 16px;
+                    padding-left: 8px;
+                    line-height: 24px;
+                    color: #161722;
+                }
+            }
+        }
+
+        input {
+            opacity: 0.2;
+            border: none;
+            border-bottom: 1px solid #232536;
+            width: 100%;
+            padding: 10px 15px;
+
+        }
+
+        label {
+            color: #232536;
+            opacity: 0.6;
+            font-size: 20px;
+            padding-top: 32px;
+            padding-bottom: 12px;
+            display: inline-block;
+        }
+
+        .reg__now {
+            width: 227px;
+            height: 64px;
+            border: none;
+            margin-top: 32px;
+            background: #FFD2A4;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            color: #1C1D28;
+            text-transform: uppercase;
+            font-size: 16px;
+
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .footcon {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    .footcon__card4 {
+        margin-top: 0px;
+    }
+
+    .footcon__card4 input {
+        width: 100%;
+    }
+
+    .footcon__card4 button {
+        position: absolute;
+        top: 105px;
+        right: 2px;
+    }
+
+    .footcon__card3 {
+        margin-top: 0px;
+        margin-right: -200px;
+    }
+
+    .footcon__card2 {
+        margin-top: 0px;
+        margin-right: -200px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .random {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 24px;
+    }
+}
