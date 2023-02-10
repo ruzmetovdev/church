@@ -9,8 +9,41 @@
   </head>
   <body>
     <header>
-      <nav></nav>
-
+      <nav id="navbar">
+        <div class="container">
+          <div class="top-nav">
+            <div class="top-left">
+              <a href="./index.html"
+                ><img src="./images/home/Logo.svg" alt=""
+              /></a>
+              <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./sermon.html">Sermon</a>
+                <a href="./blog.html">Blog</a>
+              </div>
+            </div>
+            <div class="top-right">
+              <button><a href="./contact.html">Contuct Us</a></button>
+              <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+                >&#9776;
+              </span>
+            </div>
+          </div>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <div class="overlay-content">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About Us</a>
+              <a href="./sermon.html">Sermon</a>
+              <a href="./blog.html">Blog</a>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
       <div class="container bg-container">
         <div class="content">
           <span>Relationship</span>
@@ -26,7 +59,7 @@
         <div class="container about-container">
           <h1>LOREM IPSUM DOLOR SIT AMET</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation. Ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -161,5 +194,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
