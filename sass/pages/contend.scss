@@ -1,7 +1,5 @@
 @use "../global";
 @use "../layout/footer.scss";
-@use "../global";
-
 #navbar {
   background: #0d0d0d;
   position: fixed;
@@ -127,6 +125,10 @@ nav {
   color: red;
 }
 
+//  navbar end------------------------------------
+body::-webkit-scrollbar {
+  width: 0;
+}
 
 #our {
   background-image: url(/images/contact/6liebVeAfrY.png);
@@ -135,7 +137,7 @@ nav {
   background-size: cover;
 }
 .cont {
-  padding-top: 160px;
+  padding-top: 300px;
   padding-bottom: 160px;
   h6 {
     font-family: "Roboto Condensed";
@@ -259,7 +261,6 @@ main {
       text-transform: uppercase;
       color: #161722;
       margin-top: 8px;
-    
     }
     img {
       margin-top: 8px;
@@ -270,8 +271,8 @@ main {
   }
 }
 
-// media 
-@media(min-width:700px) {
+// media
+@media (min-width: 700px) {
   .contact {
     display: flex;
     gap: 128px;
