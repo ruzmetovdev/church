@@ -569,7 +569,7 @@ footer {
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #161722;
-    max-width: 550px;
+    min-width: 550px;
     padding-left: 20px;
   }
   .right-about .all p {
@@ -579,20 +579,20 @@ footer {
     font-size: 16px;
     line-height: 24px;
     color: #161722;
+    min-width: 540px;
     opacity: 0.78;
-    max-width: 580px;
   }
-  .right-about .all button {
+  .right-about .all a {
+    display: inline-block;
     padding: 24px 64px;
     background: #ffd2a4;
     border-radius: 12px;
     margin-right: 280px;
+    transition: 0.3s;
   }
-  .all button:hover {
+  .all a:hover {
     background-color: white;
-  }
-  .all button a:hover {
-    color: #ffd2a4;
+    color: #ceaf8f;
   }
 }
 @media (min-width: 1020px) {
@@ -605,6 +605,14 @@ footer {
     height: 357px;
     cursor: pointer;
     transition: 0.1s;
+  }
+  .div {
+    position: relative;
+    top: 341px;
+    width: 292px;
+    height: 16px;
+    background: #ffd0a0;
+    transform: matrix(1, 0, 0, -1, 0, 0);
   }
   .cards span {
     margin-left: 32px;
@@ -640,16 +648,6 @@ footer {
   }
   .card h4 {
     margin-left: 32px;
-  }
-  .card:hover {
-    width: 302px;
-    height: 16px;
-    background: #ffd0a0;
-  }
-  .cards:hover {
-    width: 302px;
-    height: 16px;
-    background: #ffd0a0;
   }
   .card {
     padding-bottom: 100px;
