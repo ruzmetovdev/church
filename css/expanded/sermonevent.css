@@ -34,7 +34,129 @@ li {
   src: url(/font/RobotoCondensed-Regular.ttf);
 }
 body {
-  background-color: #F5F2F0;
+  background-color: #f5f2f0;
+}
+
+#navbar {
+  background: #0d0d0d;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+nav {
+  padding: 22px 0;
+}
+
+.navbar-shrink {
+  padding: 8px 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav .top-left {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.top-nav .top-left a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.top-nav .top-left a:hover {
+  color: #f2c79b;
+}
+.top-nav .top-left img {
+  padding-right: 92px;
+}
+.top-nav button {
+  padding: 20px 48px;
+  border: 1px solid;
+  border-radius: 12px;
+  background: #ffd2a4;
+}
+.top-nav button:hover a {
+  background: #ceaf8f;
+  color: white;
+}
+.top-nav button a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1c1d28;
+}
+.top-nav button:hover {
+  background: #ceaf8f;
+}
+.top-nav .links,
+.top-nav button {
+  display: none;
+}
+.top-nav span {
+  color: white;
+}
+@media (min-width: 900px) {
+  .top-nav .links {
+    display: flex;
+    gap: 48px;
+  }
+  .top-nav button {
+    display: flex;
+  }
+  .top-nav span {
+    display: none;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f2c79b;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 12px;
+  font-size: 60px;
+  color: red;
 }
 
 .someone__card {
@@ -46,7 +168,7 @@ body {
 }
 .someone__card .someone__card-event {
   font-size: 12px;
-  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -68,7 +190,7 @@ body {
   padding: 16px 0 20px;
 }
 .someone__card .how__to {
-  border-left: 2px solid #FFD2A4;
+  border-left: 2px solid #ffd2a4;
   padding-left: 10px;
   color: #161722;
   opacity: 0.78;
@@ -83,7 +205,7 @@ body {
 
 .register__card {
   width: 100%;
-  background: #F7F8FA;
+  background: #f7f8fa;
   padding: 0 25px;
 }
 .register__card h1 {
@@ -135,10 +257,10 @@ label {
   height: 64px;
   border: none;
   margin-top: 32px;
-  background: #FFD2A4;
+  background: #ffd2a4;
   border-radius: 12px;
   margin-bottom: 40px;
-  color: #1C1D28;
+  color: #1c1d28;
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
@@ -177,7 +299,7 @@ label {
 .random .random__box-1 .eventh3 {
   padding-top: 58px;
   font-size: 12px;
-  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -207,7 +329,7 @@ label {
 }
 
 .random__box-1:hover {
-  border-bottom: 16px solid #FFD0A0;
+  border-bottom: 16px solid #ffd0a0;
 }
 
 a {
@@ -406,7 +528,7 @@ footer {
     padding: 16px 0 20px;
   }
   .card_1 .someone__card .how__to {
-    border-left: 2px solid #FFD2A4;
+    border-left: 2px solid #ffd2a4;
     padding-left: 10px;
     color: #161722;
     opacity: 0.78;
@@ -423,7 +545,7 @@ footer {
     margin-top: 100px;
     width: 40%;
     height: 520px;
-    background: #F7F8FA;
+    background: #f7f8fa;
     padding: 0 25px;
   }
   .card_1 .register__card h1 {
@@ -471,10 +593,10 @@ footer {
     height: 64px;
     border: none;
     margin-top: 32px;
-    background: #FFD2A4;
+    background: #ffd2a4;
     border-radius: 12px;
     margin-bottom: 40px;
-    color: #1C1D28;
+    color: #1c1d28;
     text-transform: uppercase;
     font-size: 16px;
   }

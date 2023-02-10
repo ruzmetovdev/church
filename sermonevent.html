@@ -10,6 +10,43 @@
 </head>
 
 <body>
+    <nav id="navbar">
+        <div class="container">
+          <div class="top-nav">
+            <div class="top-left">
+              <a href="./index.html"
+                ><img src="./images/home/Logo.svg" alt=""
+              /></a>
+              <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./sermon.html">Sermon</a>
+                <a href="./blog.html">Blog</a>
+              </div>
+            </div>
+            <div class="top-right">
+              <button><a href="./contact.html">Contuct Us</a></button>
+              <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+                >&#9776;
+              </span>
+            </div>
+          </div>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <div class="overlay-content">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About Us</a>
+              <a href="./sermon.html">Sermon</a>
+              <a href="./blog.html">Blog</a>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
     <main>
         <section class="container card_1">
             <div class="someone__card">
@@ -169,6 +206,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
+
 
 </html>
