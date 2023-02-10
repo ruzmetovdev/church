@@ -33,8 +33,130 @@ li {
   font-family: "Roboto Condensed";
   src: url(/font/RobotoCondensed-Regular.ttf);
 }
-main {
-  background-color: #F5F2F0;
+body {
+  background-color: #f5f2f0;
+}
+
+#navbar {
+  background: #0d0d0d;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+nav {
+  padding: 22px 0;
+}
+
+.navbar-shrink {
+  padding: 8px 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav .top-left {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.top-nav .top-left a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.top-nav .top-left a:hover {
+  color: #f2c79b;
+}
+.top-nav .top-left img {
+  padding-right: 92px;
+}
+.top-nav button {
+  padding: 20px 48px;
+  border: 1px solid;
+  border-radius: 12px;
+  background: #ffd2a4;
+}
+.top-nav button:hover a {
+  background: #ceaf8f;
+  color: white;
+}
+.top-nav button a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1c1d28;
+}
+.top-nav button:hover {
+  background: #ceaf8f;
+}
+.top-nav .links,
+.top-nav button {
+  display: none;
+}
+.top-nav span {
+  color: white;
+}
+@media (min-width: 900px) {
+  .top-nav .links {
+    display: flex;
+    gap: 48px;
+  }
+  .top-nav button {
+    display: flex;
+  }
+  .top-nav span {
+    display: none;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f2c79b;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 12px;
+  font-size: 60px;
+  color: red;
 }
 
 .someone__card {
@@ -42,11 +164,11 @@ main {
 }
 .someone__card img {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .someone__card .someone__card-event {
   font-size: 12px;
-  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -68,7 +190,7 @@ main {
   padding: 16px 0 20px;
 }
 .someone__card .how__to {
-  border-left: 2px solid #FFD2A4;
+  border-left: 2px solid #ffd2a4;
   padding-left: 10px;
   color: #161722;
   opacity: 0.78;
@@ -83,7 +205,7 @@ main {
 
 .register__card {
   width: 100%;
-  background: #F7F8FA;
+  background: #f7f8fa;
   padding: 0 25px;
 }
 .register__card h1 {
@@ -135,10 +257,10 @@ label {
   height: 64px;
   border: none;
   margin-top: 32px;
-  background: #FFD2A4;
+  background: #ffd2a4;
   border-radius: 12px;
   margin-bottom: 40px;
-  color: #1C1D28;
+  color: #1c1d28;
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
@@ -177,7 +299,7 @@ label {
 .random .random__box-1 .eventh3 {
   padding-top: 58px;
   font-size: 12px;
-  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -207,7 +329,154 @@ label {
 }
 
 .random__box-1:hover {
-  border-bottom: 16px solid #FFD0A0;
+  border-bottom: 16px solid #ffd0a0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url(/font/RobotoCondensed-Regular.ttf);
+}
+footer {
+  margin-top: 100px;
+  background: url(/images/contact/Background\ Shape.png);
+  background-color: #000000;
+}
+
+.footcon {
+  text-align: center;
+  padding-top: 69px;
+  padding-bottom: 64px;
+}
+
+.footcon__card1 a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footcon__card1 img {
+  padding-bottom: 32px;
+}
+
+.footcon__card1 .bir {
+  margin-top: 32px;
+}
+
+.footcon__card1 li {
+  margin-bottom: 16px;
+}
+
+.footcon__card2 {
+  margin-top: 20px;
+}
+
+.footcon__card2 h3 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footcon__card2 a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.78;
+}
+
+.footcon__card2 li {
+  margin-bottom: 24px;
+}
+
+.footcon__card3 {
+  margin-top: 20px;
+}
+
+.footcon__card3 h3 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footcon__card4 {
+  position: relative;
+  margin-top: 20px;
+}
+
+.footcon__card4 h1 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.footcon__card4 form {
+  margin-top: 20px;
+}
+
+.footcon__card4 input {
+  width: 100%;
+  padding: 20px 0px 20px 10px;
+  border: none;
+  color: white;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+}
+
+.footcon__card4 button a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1c1d28;
+}
+
+.footcon__card4 button {
+  padding: 19px 30px;
+  background: #ffd2a4;
+  border-radius: 8px;
+  border: none;
+  margin-top: 20px;
 }
 
 @media (min-width: 620px) {
@@ -221,6 +490,19 @@ label {
     padding-top: 125px;
     font-size: 48px;
     margin-bottom: 60px;
+  }
+}
+@media (min-width: 700px) {
+  .footcon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footcon__card4 {
+    margin-top: 50px;
+  }
+  .footcon__card3 {
+    margin-top: 50px;
+    font-size: 50px;
   }
 }
 @media (min-width: 760px) {
@@ -246,7 +528,7 @@ label {
     padding: 16px 0 20px;
   }
   .card_1 .someone__card .how__to {
-    border-left: 2px solid #FFD2A4;
+    border-left: 2px solid #ffd2a4;
     padding-left: 10px;
     color: #161722;
     opacity: 0.78;
@@ -260,10 +542,10 @@ label {
     padding-bottom: 20px;
   }
   .card_1 .register__card {
-    margin-top: 100px;
+    margin-top: 200px;
     width: 40%;
     height: 520px;
-    background: #F7F8FA;
+    background: #f7f8fa;
     padding: 0 25px;
   }
   .card_1 .register__card h1 {
@@ -311,12 +593,38 @@ label {
     height: 64px;
     border: none;
     margin-top: 32px;
-    background: #FFD2A4;
+    background: #ffd2a4;
     border-radius: 12px;
     margin-bottom: 40px;
-    color: #1C1D28;
+    color: #1c1d28;
     text-transform: uppercase;
     font-size: 16px;
+  }
+}
+@media (min-width: 1000px) {
+  .footcon {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+  }
+  .footcon__card4 {
+    margin-top: 0px;
+  }
+  .footcon__card4 input {
+    width: 100%;
+  }
+  .footcon__card4 button {
+    position: absolute;
+    top: 105px;
+    right: 2px;
+  }
+  .footcon__card3 {
+    margin-top: 0px;
+    margin-right: -200px;
+  }
+  .footcon__card2 {
+    margin-top: 0px;
+    margin-right: -200px;
   }
 }
 @media (min-width: 1150px) {

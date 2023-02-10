@@ -9,7 +9,41 @@
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav id="navbar">
+        <div class="container">
+          <div class="top-nav">
+            <div class="top-left">
+              <a href="./index.html"
+                ><img src="./images/home/Logo.svg" alt=""
+              /></a>
+              <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./sermon.html">Sermon</a>
+                <a href="./blog.html">Blog</a>
+              </div>
+            </div>
+            <div class="top-right">
+              <button><a href="./contact.html">Contuct Us</a></button>
+              <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+                >&#9776;
+              </span>
+            </div>
+          </div>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <div class="overlay-content">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About Us</a>
+              <a href="./sermon.html">Sermon</a>
+              <a href="./blog.html">Blog</a>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       <section id="our">
         <div class="container our-container">
@@ -37,9 +71,7 @@
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor.
                 </p>
-                <button>
                   <a href="./blogpost.html"> Read more </a>
-                </button>
               </div>
             </div>
           </div>
@@ -54,6 +86,8 @@
           </div>
           <div class="card-box">
             <div class="cards">
+              <div class="div">             
+              </div>
               <span>Relationship</span>
               <h3>THE BEST WAY TO INSPIRE PEOPLE</h3>
               <p>
@@ -65,6 +99,8 @@
             </div>
             <br />
             <div class="cards">
+              <div class="div">             
+              </div>
               <span>Relationship</span>
               <h3>HOW TO SHOW COMPASSION</h3>
               <p>
@@ -76,6 +112,8 @@
             </div>
             <br />
             <div class="cards">
+              <div class="div">             
+              </div>
               <span>Relationship</span>
               <h3>THE BIBLICAL PURPOSE OF MONEY</h3>
               <p>
@@ -87,6 +125,8 @@
             </div>
             <br />
             <div class="cards">
+              <div class="div">             
+              </div>
               <span>Relationship</span>
               <h3>THE BEST WAY TO INSPIRE PEOPLE</h3>
               <p>
@@ -100,6 +140,7 @@
           </div>
           <div class="card-box2">
             <div class="card">
+              <div class="div"></div>
               <span>Relationship</span>
               <h3>WHAT IT MEANS TO BE A DISCIPLE</h3>
               <p>
@@ -111,6 +152,8 @@
             </div>
             <br />
             <div class="card">
+              <div class="div"></div>
+
               <span>Relationship</span>
               <h3>WHAT IT MEANS TO BELIEVE</h3>
               <p>
@@ -122,6 +165,8 @@
             </div>
             <br />
             <div class="card">
+              <div class="div"></div>
+
               <span>Relationship</span>
               <h3>the modern chruch in 2022</h3>
               <p>
@@ -136,5 +181,51 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="footcon">
+          <div class="footcon__card1">
+            <div>
+              <img src="./images/contact/Logo (1).svg" alt="" />
+            </div>
+            <ul>
+              <li><a href="">© Copyright Finsweet 2022</a></li>
+              <li class="bir"><a href="">(480) 555-0103</a></li>
+              <li><a href="">4517 Washington Ave. </a></li>
+              <li><a href="">finsweet@example.com</a></li>
+            </ul>
+          </div>
+          <div class="footcon__card2">
+            <div>
+              <h3>Quicklinks</h3>
+            </div>
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">Sermons</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footcon__card3">
+            <h3>Connect</h3>
+            <img src="/images/contact/Social wrapper.png" alt="" />
+          </div>
+          <div class="footcon__card4">
+            <div>
+              <h1>
+                Subscribe to get Latest <br />
+                Updates and News
+              </h1>
+            </div>
+            <form action="">
+              <input placeholder=" Yourmail@gmail.com" type="email" />
+            </form>
+            <button type="submit"><a href="./index.html">Subscribe</a></button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
