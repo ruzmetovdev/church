@@ -164,7 +164,7 @@ nav {
 }
 .someone__card img {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .someone__card .someone__card-event {
   font-size: 12px;
@@ -542,7 +542,7 @@ footer {
     padding-bottom: 20px;
   }
   .card_1 .register__card {
-    margin-top: 100px;
+    margin-top: 200px;
     width: 40%;
     height: 520px;
     background: #f7f8fa;
