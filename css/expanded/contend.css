@@ -169,6 +169,7 @@ footer {
   }
   .footcon__card4 input {
     width: 100%;
+    margin-right: 300px;
   }
   .footcon__card4 button {
     position: absolute;
@@ -184,6 +185,131 @@ footer {
     margin-right: -200px;
   }
 }
+#navbar {
+  background: #0d0d0d;
+  position: fixed;
+  width: 100%;
+  transition: 0.4s;
+}
+
+nav {
+  padding: 22px 0;
+}
+
+.navbar-shrink {
+  padding: 8px 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav .top-left {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.top-nav .top-left a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.top-nav .top-left a:hover {
+  color: #f2c79b;
+}
+.top-nav .top-left img {
+  padding-right: 92px;
+}
+.top-nav button {
+  padding: 20px 48px;
+  border: 1px solid;
+  border-radius: 12px;
+  background: #ffd2a4;
+}
+.top-nav button:hover a {
+  background: #ceaf8f;
+  color: white;
+}
+.top-nav button a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1c1d28;
+}
+.top-nav button:hover {
+  background: #ceaf8f;
+}
+.top-nav .links,
+.top-nav button {
+  display: none;
+}
+.top-nav span {
+  color: white;
+}
+@media (min-width: 900px) {
+  .top-nav .links {
+    display: flex;
+    gap: 48px;
+  }
+  .top-nav button {
+    display: flex;
+  }
+  .top-nav span {
+    display: none;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f2c79b;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 12px;
+  font-size: 60px;
+  color: red;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 #our {
   background-image: url(/images/contact/6liebVeAfrY.png);
   background-repeat: no-repeat;
@@ -192,7 +318,7 @@ footer {
 }
 
 .cont {
-  padding-top: 160px;
+  padding-top: 300px;
   padding-bottom: 160px;
 }
 .cont h6 {
